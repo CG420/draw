@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>HTML Starter</title>
-    <base href="./">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.css" type="text/css">
-    <link href="favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
-  <body>
-    <canvas id="canvas" height="600px" width="800px"></canvas>
-    <script src="dist/js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Draw</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <p>
+        <div>
+          <input type="color" id="head" name="color" value="#000000">
+          <label for="color">Color</label>
+        </div>
+      </p>
+      <ul>
+        <li><span id="trackX"></span></li>
+        <li><span id="trackY"></span></li>
+        <li><button id="btnRect">Rectangle</button></li>
+        <li><button id="btnLine">Line</button></li>
+        <li><button id="btnCircle">Circle</button></li>
+        <li><button id="btnPath">Path</button></li>
+        <li><button id="btnPath">Triangle</button></li>
+      </ul>
+    </nav>
+    <main></main>
+  </div>
+  <script src="dist/js/main.js"></script>
+</body>
+
 </html>
